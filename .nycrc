@@ -1,0 +1,11 @@
+{
+  "reporter": [
+    "lcov",
+    "html",
+    "text-summary"
+  ],
+  "exclude": [
+    "node_modules",
+    "*-test.js"
+  ]
+}
