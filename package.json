@@ -5,11 +5,15 @@
   "main": "index.js",
   "scripts": {
     "test": "mocha index-test.js",
-    "coverage": "./node_modules/nyc/bin/nyc.js npm t"
+    "coverage": "NODE_ENV=test ./node_modules/nyc/bin/nyc.js npm t"
   },
   "author": "Rui Lima <ruipedro.lima@gmail.com>",
   "license": "ISC",
   "dependencies": {
+    "babel-core": "^6.18.2",
+    "babel-preset-es2015": "^6.18.0",
+    "babel-preset-stage-3": "^6.17.0",
+    "babel-plugin-istanbul": "^3.0.0",
     "mocha": "^3.1.2",
     "nyc": "^8.4.0"
   }
